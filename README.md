@@ -51,19 +51,19 @@ A script is a file that contains a series of commands that the shell will execut
 
 For this project, the Bash script (run.sh) will do the following:
 
-- Take three arguments from the command line: the URL file, the downloads folder, and the archives folder.
 - Print the start time and the script’s full path.
 - Create a temporary folder for downloads.
-- Download each JSON file and save HTTP headers separately.
-- Copy JSON files from temporary folder to downloads folder.
+- Download each JSON file listed in urls.txt and save HTTP headers separately.
+- Copy JSON files from the temporary folder to the downloads folder.
 - Compile all headers into headers.txt.
-- Compress the downloads folder into a timestamped archive.
+- Compress the downloads folder into a timestamped archive in the archives folder.
 - Print the end time and a “Bye!” message.
 
 ## How to run the script
-bash run.sh urls.txt downloads archives
+bash run.sh
 
-- urls.txt : a list of JSON URLs (one per line).
-- downloads : folder where JSON files and headers.txt will be saved.
-- archives : folder where the compressed archive will be created.
+- urls.txt : a list of JSON URLs (one per line), must be in the same folder as run.sh
+- downloads : folder where JSON files and headers.txt will be saved (created automatically)
+- archives : folder where the compressed archive will be created (created automatically)
+
 
