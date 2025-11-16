@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Date: Sun, 16 Nov 2025 16:29:58 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Upgrade: h2,h2c
+Connection: Upgrade
+Last-Modified: Sun, 13 Oct 2024 08:11:19 GMT
+ETag: "157a-6245743d8eae0"
+Accept-Ranges: bytes
+Content-Length: 5498
+Content-Type: application/json
+
