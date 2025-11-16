@@ -34,13 +34,11 @@ For example:
 - GitBash also included in the Windows package.
 
 ## A command and its arguments (and how a command is processed)
-
 A command is the main keyword in the shell to request an action.  
 Arguments are additional information that specify or modify the behavior of the command. Some of this information is called options when they start with a dash (- or --) and modify how the command works. Arguments (and options) are usually separated by spaces when there are multiple.
 
 Simple example:
 
-```bash
 ls -l /home/Documents
 ls → command (lists the files in a folder)
 
@@ -48,34 +46,24 @@ ls → command (lists the files in a folder)
 
 /home/Documents → argument / parameter (the folder on which the command acts)
 
-The script
+## The script
 A script is a file that contains a series of commands that the shell will execute one after another. Instead of typing commands manually each time, a script allows automating tasks. Scripts are useful for repetitive work, monitoring, backups, or data processing.
 
 For this project, the Bash script (run.sh) will do the following:
 
-Take three arguments from the command line: the URL file, the downloads folder, and the archives folder.
+- Take three arguments from the command line: the URL file, the downloads folder, and the archives folder.
+- Print the start time and the script’s full path.
+- Create a temporary folder for downloads.
+- Download each JSON file and save HTTP headers separately.
+- Copy JSON files from temporary folder to downloads folder.
+- Compile all headers into headers.txt.
+- Compress the downloads folder into a timestamped archive.
+- Print the end time and a “Bye!” message.
 
-Print the start time and the script’s full path.
-
-Create a temporary folder for downloads.
-
-Download each JSON file and save HTTP headers separately.
-
-Copy JSON files from temporary folder to downloads folder.
-
-Compile all headers into headers.txt.
-
-Compress the downloads folder into a timestamped archive.
-
-Print the end time and a “Bye!” message.
-
-How to run the script
-bash
-Copier le code
+## How to run the script
 bash run.sh urls.txt downloads archives
-urls.txt → a list of JSON URLs (one per line).
 
-downloads → folder where JSON files and headers.txt will be saved.
-
-archives → folder where the compressed archive will be created.
+- urls.txt : a list of JSON URLs (one per line).
+- downloads : folder where JSON files and headers.txt will be saved.
+- archives : folder where the compressed archive will be created.
 
