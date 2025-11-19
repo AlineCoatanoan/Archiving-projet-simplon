@@ -1,3 +1,6 @@
+#! bin/bash
+#shebang
+#précise que le script est exécuté en bash
 
 # 1. Format de la date et chemin du script
 ISO_DATE=$(date +%Y-%m-%dT%H:%M:%S.%3N%z)
